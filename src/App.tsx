@@ -103,7 +103,7 @@ class App extends React.Component<WithStyles<typeof styles>> {
             <h3>Open-Source</h3>
             <ContactItem icon="fab fa-github-alt" lines={['npmi']} />
             <ContactItem icon="fab fa-github-alt" lines={['Kevoree', 'Kevoree Modeling', 'Kevoree ClassLoader']} />
-            <ContactItem icon="fas fa-github-alt" lines={['GreyCat']} />
+            <ContactItem icon="fab fa-github-alt" lines={['GreyCat']} />
           </div>
         </Paper>
         <div className={classes.rightPanel}>
