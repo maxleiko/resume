@@ -8,6 +8,7 @@ import resume from './data/resume';
 import Experience from './components/Experience';
 import Publication from './components/Publication';
 import Education from './components/Education';
+import Teaching from './components/Teaching';
 
 const styles = createStyles({
   root: {
@@ -95,13 +96,14 @@ class App extends React.Component<WithStyles<typeof styles>> {
             <ContactItem icon="fa fa-code" lines={['JavaScript, TypeScript, Java, Kotlin, C/C++, HTML5, CSS3']} />
             <ContactItem icon="fa fa-pencil-alt" lines={['UML, MDE, Reactive/Functional Programming']} />
             <ContactItem icon="fa fa-database" lines={['MongoDB, Oracle, Postgres, MariaDB, Redis']} />
+            <ContactItem icon="fa fa-map-marked-alt" lines={['GMaps, OpenStreet Map, OGC Standards']} />
             <ContactItem icon="fa fa-sitemap" lines={['WebSocket, WebRTC, MQTT']} />
           </div>
           <div className={classes.leftBlock}>
             <h3>Open-Source</h3>
             <ContactItem icon="fab fa-github-alt" lines={['npmi']} />
             <ContactItem icon="fab fa-github-alt" lines={['Kevoree', 'Kevoree Modeling', 'Kevoree ClassLoader']} />
-            <ContactItem icon="fab fa-github-alt" lines={['GreyCat']} />
+            <ContactItem icon="fas fa-github-alt" lines={['GreyCat']} />
           </div>
         </Paper>
         <div className={classes.rightPanel}>
@@ -112,11 +114,14 @@ class App extends React.Component<WithStyles<typeof styles>> {
           <Section icon="fas fa-briefcase" title="Expérience Professionnelle">
             {resume.experiences.map((c, i) => <Experience key={i} {...c} />)}
           </Section>
-          <Section icon="fas fa-graduation-cap" title="Publications Scientifiques">
-            {resume.publications.map((p, i) => <Publication key={i} {...p} />)}
-          </Section>
           <Section icon="fas fa-user-graduate" title="Formation">
             {resume.educations.map((e, i) => <Education key={i} {...e} />)}
+          </Section>
+          <Section icon="fas fa-chalkboard-teacher" title="Activités d'Enseignement">
+            {resume.teaching.map((t, i) => <Teaching key={i} {...t} />)}
+          </Section>
+          <Section icon="fas fa-graduation-cap" title="Publications Scientifiques">
+            {resume.publications.map((p, i) => <Publication key={i} {...p} />)}
           </Section>
         </div>
       </div>

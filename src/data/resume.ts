@@ -56,6 +56,29 @@ export default {
         </ul>`,
     },
   ],
+  teaching: [
+    {
+      name: 'Techniques Avancées de Construction d\'Architecture Logiciel',
+      timeperiod: 'Septembre 2013 - Décembre 2018',
+      school: 'ISTIC, Université Rennes I (35)',
+      level: 'Master 2',
+      description: 'Keywords: Composants, OSGi, Spring-Boot, Angular, ORM, JavaFX, Programmation Orienté Aspect',
+    },
+    {
+      name: 'Conception à base d\'approche orientée objet',
+      timeperiod: 'Septembre 2013 - Décembre 2018',
+      school: 'ISTIC, Université Rennes I (35)',
+      level: 'Master 2',
+      description: 'Keywords: Patron de conception, JavaFX, dead-locks, threading, tests unitaires & intégration',
+    },
+    {
+      name: 'Analyse et Conception Objet',
+      timeperiod: 'Septembre 2013 - Décembre 2013',
+      school: 'ISTIC, Université Rennes I (35)',
+      level: 'Master 1',
+      description: 'Keywords: Patron de conception, UML, tests unitaires & intégration',
+    },
+  ],
   educations: [
     {
       degree: 'Master Informatique - Génie Logiciel',
