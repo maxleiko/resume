@@ -1,13 +1,40 @@
-html {
-  background-color: #ccc;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
+  background-color: #ccc;
 }
 
 a:visited {
   color: inherit;
+}
+
+@media print {
+  html {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* pixel-perfect dirty hack because CSS and printing does not work AT ALL */
+  body {
+    height: 100%;
+  }
+
+  /* pixel-perfect dirty hack because CSS and printing does not work AT ALL */
+  #root::after {
+    content: '';
+    display: block;
+    height: 566px;
+    width: 100%;
+    background: url("print-hack.png") repeat-y;
+    overflow: hidden;
+  }
+
+  /* pixel-perfect dirty hack because CSS and printing does not work AT ALL */
+  #teaching-section {
+    padding-top: 80px;
+  }
 }

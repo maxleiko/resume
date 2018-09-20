@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { createStyles, WithStyles, withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import avatar from './avatar.jpg';
 import ContactItem from './components/ContactItem';
 import Section from './components/Section';
@@ -13,7 +12,8 @@ import Teaching from './components/Teaching';
 const styles = createStyles({
   root: {
     display: 'flex',
-    width: 940,
+    flewGrow: 1,
+    width: 970,
     margin: 'auto',
   },
   leftPanel: {
@@ -43,9 +43,9 @@ const styles = createStyles({
     marginBottom: 5,
   },
   rightPanel: {
+    flexGrow: 1,
     display: 'flex',
     flexFlow: 'column',
-    flexGrow: 1,
     padding: 15,
   },
   heading: {
@@ -81,7 +81,7 @@ class App extends React.Component<WithStyles<typeof styles>> {
 
     return (
       <div className={classes.root}>
-        <Paper className={classes.leftPanel} elevation={4} square>
+        <div className={classes.leftPanel}>
           <img src={avatar} className={classes.avatar} alt="Avatar" />
           <div className={classes.leftBlock}>
             <h3>Contact</h3>
@@ -105,7 +105,7 @@ class App extends React.Component<WithStyles<typeof styles>> {
             <ContactItem icon="fab fa-github-alt" lines={['Kevoree', 'Kevoree Modeling', 'Kevoree ClassLoader']} />
             <ContactItem icon="fab fa-github-alt" lines={['GreyCat']} />
           </div>
-        </Paper>
+        </div>
         <div className={classes.rightPanel}>
           <div className={classes.heading}>
             <h1>{resume.name.first} {resume.name.last}</h1>
@@ -117,6 +117,7 @@ class App extends React.Component<WithStyles<typeof styles>> {
           <Section icon="fas fa-user-graduate" title="Formation">
             {resume.educations.map((e, i) => <Education key={i} {...e} />)}
           </Section>
+          <span id="teaching-section" />
           <Section icon="fas fa-chalkboard-teacher" title="Activités d'Enseignement">
             {resume.teaching.map((t, i) => <Teaching key={i} {...t} />)}
           </Section>
