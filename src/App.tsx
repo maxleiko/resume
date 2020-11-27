@@ -21,9 +21,12 @@ const styles = createStyles({
     backgroundColor: '#222',
     color: 'rgba(255, 255, 255, 0.54)',
     padding: 10,
+    display: 'flex',
+    flexFlow: 'column',
   },
   avatar: {
-    width: '100%',
+    width: '90%',
+    alignSelf: 'center',
   },
   leftBlock: {
     padding: '15px',
@@ -32,7 +35,7 @@ const styles = createStyles({
       letterSpacing: 2,
       textTransform: 'uppercase',
       fontSize: 14,
-    }
+    },
   },
   rightBlock: {
     flexGrow: 1,
