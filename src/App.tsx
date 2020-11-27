@@ -25,7 +25,7 @@ const styles = createStyles({
     flexFlow: 'column',
   },
   avatar: {
-    width: '90%',
+    width: '100%',
     alignSelf: 'center',
   },
   leftBlock: {
