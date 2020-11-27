@@ -10,6 +10,34 @@ export default {
   },
   experiences: [
     {
+      company: 'DataThings S.à.r.l',
+      location: 'Rennes (35) / Luxembourg',
+      position: 'Software Engineer',
+      timeperiod: 'Depuis Novembre 2018',
+      description: `<ul>
+        <li>Participation au Design & Implémentation du language Greycat (C)</li>
+        <li>
+          <span>Développement du tooling pour Greycat:</span>
+          <ul>
+            <li>Greycat Debugger (C)</li>
+            <li>Syntax Analysis / Highlighting (TypeScript)</li>
+            <li>Native bindings (Node.js N-API, WASM, Rust)</li>
+            <li>Syntax Analysis / Highlighting (TypeScript)</li>
+            <li>VSCode Studio plugin (TypeScript)</li>
+            <li>IntelliJ IDEA plugin (Java)</li>
+          </ul>
+        </li>
+        <li>
+          <span>Utilisation de Greycat au sein d'un projet client avec Rennes Métropole: "Plateforme Data". Aggrégation de flux de données hétérogènes dans le but d'appliquer des algorithmes de machines learning pour obtenir des projections de consommation</span>
+          <ul>
+            <li>Intégration des données provenant d'un réseau LoRa</li>
+            <li>Utilisation des technologies: S3, Min.IO, beanstalkd, Cronicle, Apache-Drill, Zookeeper, Postgres, Redis, Nginx, Certbot</li>
+            <li>Développment de composants (TypeScript, C, Rust) permettant la récupération / validation / transformation des données en suivant des principes ACID</li>
+          </ul>
+        </li>
+      </ul>`,
+    },
+    {
       company: 'Mission pour DataThings S.à.r.l',
       location: 'Rennes (35) / Luxembourg',
       position: 'Freelance / Auto-entrepreneur',
@@ -140,6 +168,9 @@ export default {
     },
     {
       name: 'Docker',
+    },
+    {
+      name: 'Rust',
     },
     {
       name: 'Angular 5',

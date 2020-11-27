@@ -92,8 +92,8 @@ class App extends React.Component<WithStyles<typeof styles>> {
           </div>
           <div className={classes.leftBlock}>
             <h3>Compétences</h3>
-            <ContactItem icon="fa fa-globe-americas" lines={['Anglais (lu, parlé et écrit)', 'Espagnol (notions)']} />
-            <ContactItem icon="fa fa-code" lines={['JavaScript, TypeScript, Java, Kotlin, C/C++, HTML5, CSS3']} />
+            <ContactItem icon="fa fa-globe-americas" lines={['Anglais', 'Espagnol']} />
+            <ContactItem icon="fa fa-code" lines={['C, TypeScript, HTML/CSS, Rust, Java/Kotlin, C++']} />
             <ContactItem icon="fa fa-pencil-alt" lines={['UML, MDE, Reactive/Functional Programming']} />
             <ContactItem icon="fa fa-database" lines={['MongoDB, Oracle, Postgres, MariaDB, Redis']} />
             <ContactItem icon="fa fa-map-marked-alt" lines={['GMaps, OpenStreet Map, OGC Standards']} />
@@ -101,9 +101,9 @@ class App extends React.Component<WithStyles<typeof styles>> {
           </div>
           <div className={classes.leftBlock}>
             <h3>Open-Source</h3>
-            <ContactItem icon="fab fa-github-alt" lines={['npmi']} />
+            <ContactItem icon="fab fa-github-alt" lines={['Greycat']} />
+            <ContactItem icon="fab fa-github-alt" lines={['npmi', 'beanstalkc-rust']} />
             <ContactItem icon="fab fa-github-alt" lines={['Kevoree', 'Kevoree Modeling', 'Kevoree ClassLoader']} />
-            <ContactItem icon="fab fa-github-alt" lines={['GreyCat']} />
           </div>
         </div>
         <div className={classes.rightPanel}>
